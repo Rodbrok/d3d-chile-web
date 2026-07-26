@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# D3D Chile
 
-## Getting Started
+Sitio web comercial de D3D Chile para presentar servicios de impresión 3D, corte y grabado láser, exhibir el catálogo y facilitar solicitudes de cotización y contacto.
 
-First, run the development server:
+## Stack
+
+- Next.js 16 con App Router
+- React 19
+- TypeScript en modo estricto
+- Tailwind CSS 4
+- ESLint 9 con las reglas recomendadas de Next.js y TypeScript
+- npm para la gestión de dependencias y comandos
+
+## Requisitos locales
+
+- Node.js 20.9 o superior
+- npm, incluido con Node.js
+- Git
+
+## Instalación y uso
+
+Instalar las dependencias declaradas en `package-lock.json`:
+
+```bash
+npm install
+```
+
+Iniciar el entorno de desarrollo en `http://localhost:3000`:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Validar el código con ESLint:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run lint
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Generar la compilación de producción:
 
-## Learn More
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+Ejecutar localmente una compilación ya generada:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Estructura inicial
 
-## Deploy on Vercel
+```text
+docs/                   Documentación funcional y reglas de trabajo
+public/                 Archivos estáticos públicos
+src/
+  app/                  Rutas, layouts y estilos globales del App Router
+  components/
+    layout/             Componentes de estructura compartida
+    ui/                 Componentes visuales reutilizables
+  data/                 Contenido estático y datos locales
+  features/             Funcionalidades organizadas por dominio
+  lib/                  Utilidades y configuraciones compartidas
+  styles/               Estilos adicionales organizados por alcance
+  types/                Tipos TypeScript compartidos
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Las carpetas vacías incluyen un archivo `.gitkeep` temporal para conservar la estructura en Git. Debe eliminarse al incorporar el primer archivo real en cada carpeta.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Estado actual
+
+El proyecto base está configurado con Next.js, App Router, TypeScript, Tailwind CSS y ESLint. La estructura inicial y la documentación están preparadas para comenzar el desarrollo incremental.
+
+En esta etapa no hay base de datos, autenticación, panel de administración, comercio electrónico, pagos ni integración con Supabase. La página de inicio conserva el diseño inicial de `create-next-app`.
+
+La planificación funcional se encuentra en [docs/plan-proyecto.md](docs/plan-proyecto.md) y las normas de colaboración en [docs/reglas-desarrollo.md](docs/reglas-desarrollo.md).
+
+## Seguridad
+
+- No subir claves, tokens, contraseñas, credenciales ni secretos al repositorio.
+- No versionar archivos `.env` ni variantes como `.env.local` o `.env.production`.
+- Mantener la regla `.env*` de `.gitignore` y verificar los cambios antes de cada commit.
+- Usar variables de entorno locales para cualquier dato sensible cuando se incorporen integraciones.
+- Revocar y reemplazar inmediatamente cualquier secreto expuesto por error; eliminarlo del último commit no basta si ya fue compartido.
+
+## Flujo de trabajo
+
+Los cambios deben ser pequeños, documentados, validados y fáciles de revisar. Antes de considerar terminado un cambio, ejecutar `npm run lint` y `npm run build`. Consultar [docs/reglas-desarrollo.md](docs/reglas-desarrollo.md) para las reglas completas.
