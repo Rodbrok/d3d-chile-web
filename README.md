@@ -70,9 +70,9 @@ Las carpetas vacías incluyen un archivo `.gitkeep` temporal para conservar la e
 
 ## Estado actual
 
-El proyecto base está configurado con Next.js, App Router, TypeScript, Tailwind CSS y ESLint. La estructura inicial y la documentación están preparadas para comenzar el desarrollo incremental.
+El proyecto cuenta con una identidad visual inicial, layout público, navegación responsive y componentes reutilizables. Los textos de marca, contacto y navegación se administran desde `src/data`, mientras que las piezas de interfaz se organizan en `src/components`.
 
-En esta etapa no hay base de datos, autenticación, panel de administración, comercio electrónico, pagos ni integración con Supabase. La página de inicio conserva el diseño inicial de `create-next-app`.
+En esta etapa no hay base de datos, autenticación, panel de administración, comercio electrónico, pagos ni integración con Supabase. Los enlaces de secciones futuras están preparados como anclas internas hasta que se creen sus rutas.
 
 La planificación funcional se encuentra en [docs/plan-proyecto.md](docs/plan-proyecto.md) y las normas de colaboración en [docs/reglas-desarrollo.md](docs/reglas-desarrollo.md).
 
