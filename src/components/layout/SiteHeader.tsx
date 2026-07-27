@@ -7,7 +7,7 @@ import { siteContent } from "@/data/site";
 
 function Brand() {
   return (
-    <Link href="#inicio" className="flex items-center gap-3" aria-label="D3D Chile, inicio">
+    <Link href="/" className="flex items-center gap-3" aria-label="D3D Chile, inicio">
       <span className="grid size-11 place-items-center rounded-xl bg-gradient-to-br from-cyan-300 to-violet-600 font-black tracking-tight text-slate-950">
         D3
       </span>
@@ -42,10 +42,10 @@ export function SiteHeader() {
           <NavigationLinks />
         </nav>
         <div className="hidden lg:block xl:hidden">
-          <Button href="#cotizar">Cotizar proyecto</Button>
+          <Button href="/#cotizar">Cotizar proyecto</Button>
         </div>
         <div className="hidden xl:block">
-          <Button href="#cotizar">Cotizar proyecto</Button>
+          <Button href="/#cotizar">Cotizar proyecto</Button>
         </div>
         <details className="group relative lg:hidden">
           <summary className="flex size-11 cursor-pointer list-none items-center justify-center rounded-xl border border-slate-700 text-slate-50 [&::-webkit-details-marker]:hidden">
@@ -58,7 +58,7 @@ export function SiteHeader() {
           </summary>
           <nav className="absolute top-14 right-0 w-72 rounded-2xl border border-slate-700 bg-slate-950 p-5 shadow-2xl" aria-label="Navegación móvil">
             <NavigationLinks mobile />
-            <Button href="#cotizar" className="mt-5 w-full">Cotizar proyecto</Button>
+            <Button href="/#cotizar" className="mt-5 w-full">Cotizar proyecto</Button>
           </nav>
         </details>
       </Container>
