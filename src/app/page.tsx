@@ -1,10 +1,13 @@
+import { BenefitItem } from "@/components/home/BenefitItem";
+import { FeaturedWorkCard } from "@/components/home/FeaturedWorkCard";
+import { ProcessStep } from "@/components/home/ProcessStep";
+import { ServiceCard } from "@/components/home/ServiceCard";
 import { PublicLayout } from "@/components/layout/PublicLayout";
 import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
-import { Card } from "@/components/ui/Card";
 import { Container } from "@/components/ui/Container";
 import { SectionHeader } from "@/components/ui/SectionHeader";
-import { homeContent } from "@/data/site";
+import { homeContent } from "@/data/home";
 
 export default function Home() {
   return (
@@ -14,19 +17,20 @@ export default function Home() {
         <div className="absolute top-10 right-[-12rem] size-[34rem] rounded-full bg-violet-600/15 blur-3xl" aria-hidden="true" />
         <Container className="relative grid min-h-[690px] items-center gap-14 py-20 lg:grid-cols-[1.15fr_0.85fr] lg:py-24">
           <div>
-            <Badge>{homeContent.eyebrow}</Badge>
+            <Badge>{homeContent.hero.eyebrow}</Badge>
             <h1 className="mt-7 max-w-3xl text-5xl leading-[1.05] font-semibold tracking-[-0.04em] text-slate-50 sm:text-6xl lg:text-7xl">
-              Transformamos tus ideas en <span className="text-gradient">objetos reales.</span>
+              {homeContent.hero.title} <span className="text-gradient">{homeContent.hero.highlightedTitle}</span>
             </h1>
-            <p className="mt-7 max-w-2xl text-lg leading-8 text-slate-300 sm:text-xl">{homeContent.subtitle}</p>
+            <p className="mt-7 max-w-2xl text-lg leading-8 text-slate-300 sm:text-xl">{homeContent.hero.subtitle}</p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-              <Button href="#cotizar">Cotizar proyecto</Button>
-              <Button href="#servicios" variant="secondary">Ver servicios</Button>
+              <Button href={homeContent.hero.primaryAction.href}>{homeContent.hero.primaryAction.label}</Button>
+              <Button href={homeContent.hero.secondaryAction.href} variant="secondary">{homeContent.hero.secondaryAction.label}</Button>
             </div>
-            <div className="mt-12 flex flex-wrap gap-x-8 gap-y-3 text-sm text-slate-400">
-              <span className="flex items-center gap-2"><span className="size-1.5 rounded-full bg-cyan-300" />Fabricación local</span>
-              <span className="flex items-center gap-2"><span className="size-1.5 rounded-full bg-violet-400" />Proyectos personalizados</span>
-            </div>
+            <ul className="mt-12 flex flex-wrap gap-x-8 gap-y-3 text-sm text-slate-400">
+              {homeContent.hero.trustMessages.map((message) => (
+                <li key={message} className="flex items-center gap-2"><span className="size-1.5 rounded-full bg-cyan-300" aria-hidden="true" />{message}</li>
+              ))}
+            </ul>
           </div>
           <div className="relative mx-auto hidden aspect-square w-full max-w-md lg:block" aria-hidden="true">
             <div className="absolute inset-8 rotate-6 rounded-[3rem] border border-cyan-300/20 bg-gradient-to-br from-cyan-300/10 via-slate-900 to-violet-500/20 shadow-[0_0_80px_rgba(34,211,238,0.08)]" />
@@ -45,43 +49,49 @@ export default function Home() {
 
       <section id="servicios" className="bg-[#0f172a] py-20 sm:py-24">
         <Container>
-          <SectionHeader eyebrow="Qué hacemos" title="Dos tecnologías, infinitas posibilidades." description="Elegimos el proceso adecuado para convertir cada diseño en una solución bien terminada y funcional." />
+          <SectionHeader eyebrow={homeContent.services.eyebrow} title={homeContent.services.title} description={homeContent.services.description} />
           <div className="mt-12 grid gap-5 md:grid-cols-2">
-            {homeContent.services.map((service) => (
-              <Card key={service.title} className="group relative overflow-hidden sm:p-9">
-                <div className={`absolute inset-x-0 top-0 h-1 ${service.accent === "cyan" ? "bg-cyan-300" : "bg-violet-500"}`} />
-                <div className="flex items-start justify-between gap-6">
-                  <span className={`text-xs font-bold tracking-[0.2em] ${service.accent === "cyan" ? "text-cyan-300" : "text-violet-400"}`}>SERVICIO {service.number}</span>
-                  <span className="text-4xl font-light text-slate-700 transition-colors group-hover:text-slate-500">↗</span>
-                </div>
-                <h3 className="mt-14 text-2xl font-semibold text-slate-50">{service.title}</h3>
-                <p className="mt-3 max-w-md leading-7 text-slate-400">{service.description}</p>
-              </Card>
-            ))}
+            {homeContent.services.items.map((service) => <ServiceCard key={service.title} service={service} />)}
           </div>
         </Container>
       </section>
 
-      <section className="border-y border-slate-800 bg-[#0b1220] py-20 sm:py-24">
-        <Container className="grid gap-12 lg:grid-cols-[0.75fr_1.25fr] lg:items-end">
-          <SectionHeader eyebrow="Por qué D3D" title="Un proceso simple, enfocado en tu proyecto." />
-          <div className="grid gap-px overflow-hidden rounded-2xl border border-slate-800 bg-slate-800 sm:grid-cols-2">
-            {homeContent.benefits.map((benefit, index) => (
-              <div key={benefit} className="flex min-h-28 items-center gap-4 bg-slate-900 p-6">
-                <span className="grid size-8 shrink-0 place-items-center rounded-full border border-cyan-400/30 text-xs font-bold text-cyan-300">{String(index + 1).padStart(2, "0")}</span>
-                <p className="font-medium text-slate-200">{benefit}</p>
-              </div>
-            ))}
+      <section id="trabajos" className="border-y border-slate-800 bg-[#0b1220] py-20 sm:py-24">
+        <Container>
+          <SectionHeader eyebrow={homeContent.featuredWorks.eyebrow} title={homeContent.featuredWorks.title} description={homeContent.featuredWorks.description} />
+          <div className="mt-12 grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
+            {homeContent.featuredWorks.items.map((work) => <FeaturedWorkCard key={work.title} work={work} />)}
           </div>
+        </Container>
+      </section>
+
+      <section id="proceso" className="bg-[#0f172a] py-20 sm:py-24">
+        <Container>
+          <SectionHeader eyebrow={homeContent.process.eyebrow} title={homeContent.process.title} description={homeContent.process.description} />
+          <ol className="mt-14 grid gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6">
+            {homeContent.process.steps.map((step, index) => <ProcessStep key={step.title} number={index + 1} {...step} />)}
+          </ol>
+        </Container>
+      </section>
+
+      <section className="border-y border-slate-800 bg-[#0b1220] py-20 sm:py-24">
+        <Container className="grid gap-12 lg:grid-cols-[0.7fr_1.3fr] lg:items-start">
+          <SectionHeader eyebrow={homeContent.benefits.eyebrow} title={homeContent.benefits.title} />
+          <ul className="grid gap-px overflow-hidden rounded-2xl border border-slate-800 bg-slate-800 sm:grid-cols-2">
+            {homeContent.benefits.items.map((benefit, index) => <BenefitItem key={benefit.title} number={index + 1} {...benefit} />)}
+          </ul>
         </Container>
       </section>
 
       <section id="cotizar" className="bg-[#0f172a] py-20 sm:py-24">
         <Container>
-          <div className="relative overflow-hidden rounded-[2rem] border border-cyan-400/20 bg-gradient-to-r from-cyan-400/10 via-slate-900 to-violet-600/15 px-6 py-14 text-center sm:px-12">
+          <div className="relative overflow-hidden rounded-[2rem] border border-cyan-400/20 bg-gradient-to-r from-cyan-400/10 via-slate-900 to-violet-600/15 px-6 py-14 text-center sm:px-12 sm:py-16">
             <div id="proximamente" className="absolute top-0 left-1/2 h-px w-1/2 -translate-x-1/2 bg-gradient-to-r from-transparent via-cyan-300 to-transparent" />
-            <SectionHeader align="center" eyebrow="Hagámoslo realidad" title="¿Tienes una idea en mente?" description="Cuéntanos sobre tu proyecto y conversemos sobre la mejor forma de fabricarlo." />
-            <Button href="mailto:contacto@d3dchile.cl" className="mt-8">Iniciar una cotización</Button>
+            <SectionHeader align="center" eyebrow={homeContent.finalCta.eyebrow} title={homeContent.finalCta.title} description={homeContent.finalCta.description} />
+            <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
+              <Button href={homeContent.finalCta.primaryAction.href}>{homeContent.finalCta.primaryAction.label}</Button>
+              <Button href={homeContent.finalCta.secondaryAction.href} variant="secondary">{homeContent.finalCta.secondaryAction.label}</Button>
+            </div>
           </div>
         </Container>
       </section>
