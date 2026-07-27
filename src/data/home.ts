@@ -26,7 +26,7 @@ export const homeContent = {
           "Fabricamos prototipos, repuestos, figuras, piezas funcionales y objetos personalizados en distintas escalas.",
         examples: "Prototipos, piezas únicas y series pequeñas",
         actionLabel: "Cotizar impresión 3D",
-        href: "#cotizar",
+        href: "/impresion-3d",
         accent: "cyan" as const,
       },
       {

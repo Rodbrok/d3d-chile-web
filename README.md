@@ -70,7 +70,7 @@ Las carpetas vacías incluyen un archivo `.gitkeep` temporal para conservar la e
 
 ## Estado actual
 
-El proyecto cuenta con una identidad visual inicial, layout público, navegación responsive y componentes reutilizables. La portada incluye presentación comercial, servicios, trabajos destacados simulados, proceso de atención, beneficios y llamados a cotizar. Los textos de marca, contacto, navegación y contenido de la portada se administran desde `src/data`, mientras que las piezas de interfaz se organizan en `src/components`.
+El proyecto cuenta con una identidad visual inicial, layout público, navegación responsive y componentes reutilizables. La portada incluye presentación comercial, servicios, trabajos destacados simulados, proceso de atención, beneficios y llamados a cotizar. La ruta `/impresion-3d` presenta aplicaciones, materiales, ejemplos simulados, referencias comerciales, proceso y preguntas frecuentes del servicio. Los textos de marca, contacto, navegación y contenido de las páginas se administran desde `src/data`, mientras que las piezas de interfaz se organizan en `src/components`.
 
 En esta etapa no hay base de datos, autenticación, panel de administración, comercio electrónico, pagos ni integración con Supabase. Los enlaces de secciones futuras están preparados como anclas internas hasta que se creen sus rutas.
 
