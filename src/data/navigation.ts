@@ -3,7 +3,7 @@ import type { NavigationItem } from "@/types/site";
 export const mainNavigation: NavigationItem[] = [
   { label: "Inicio", href: "/#inicio" },
   { label: "Impresión 3D", href: "/impresion-3d" },
-  { label: "Corte y grabado láser", href: "/#servicios" },
+  { label: "Corte y grabado láser", href: "/laser" },
   { label: "Catálogo", href: "/#proximamente" },
   { label: "Ofertas", href: "/#proximamente", featured: true },
   { label: "Cotizar", href: "/#cotizar" },
