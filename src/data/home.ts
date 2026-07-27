@@ -5,7 +5,7 @@ export const homeContent = {
     highlightedTitle: "Diseñamos, fabricamos y personalizamos.",
     subtitle:
       "Impresión 3D, corte y grabado láser para proyectos personales, emprendimientos y soluciones funcionales.",
-    primaryAction: { label: "Cotizar proyecto", href: "#cotizar" },
+    primaryAction: { label: "Cotizar proyecto", href: "/cotizar" },
     secondaryAction: { label: "Ver servicios", href: "#servicios" },
     trustMessages: [
       "Fabricación a pedido",
@@ -109,7 +109,7 @@ export const homeContent = {
     title: "¿Tienes una idea que quieres fabricar?",
     description:
       "Cuéntanos qué necesitas. Revisaremos tu proyecto y te orientaremos sobre la mejor forma de llevarlo a producción.",
-    primaryAction: { label: "Cotizar proyecto", href: "mailto:contacto@d3dchile.cl?subject=Cotización%20de%20proyecto" },
+    primaryAction: { label: "Cotizar proyecto", href: "/cotizar" },
     secondaryAction: { label: "Ver servicios", href: "#servicios" },
   },
 };

@@ -8,7 +8,7 @@ export const catalogContent = {
     title: "Catálogo inicial de productos y trabajos personalizados",
     subtitle:
       "Explora ejemplos editables de lo que podemos fabricar. Cada pieza se adapta a tus medidas, material, cantidad y terminación.",
-    primaryAction: { label: "Cotizar un producto", href: "#cotizar" },
+    primaryAction: { label: "Cotizar un producto", href: "/cotizar" },
     secondaryAction: { label: "Ver categorías", href: "#categorias" },
     trustMessages: ["Productos a pedido", "Personalización", "Valores referenciales"],
   },
