@@ -6,7 +6,7 @@ export const mainNavigation: NavigationItem[] = [
   { label: "Corte y grabado láser", href: "/laser" },
   { label: "Catálogo", href: "/catalogo" },
   { label: "Ofertas", href: "/#proximamente", featured: true },
-  { label: "Cotizar", href: "/#cotizar" },
+  { label: "Cotizar", href: "/cotizar" },
   { label: "Contacto", href: "/#contacto" },
 ];
 
