@@ -1,0 +1,107 @@
+import type { Faq, FileRequirement, LaserExample, Material, ReferencePrice, UseCase } from "@/types/services";
+
+export const laserContent = {
+  hero: {
+    eyebrow: "Corte y grabado láser",
+    title: "Corte preciso y grabado personalizado para dar forma a tu idea.",
+    subtitle: "Creamos piezas, letreros, productos y detalles para marcas, regalos y emprendimientos, con cada proyecto evaluado según su material y terminación.",
+    primaryAction: { label: "Cotizar trabajo láser", href: "mailto:contacto@d3dchile.cl?subject=Cotización%20de%20trabajo%20láser" },
+    secondaryAction: { label: "Ver ejemplos", href: "#ejemplos" },
+    trustMessages: ["Cortes precisos", "Grabados personalizados", "Productos para marcas y regalos"],
+  },
+  useCases: {
+    eyebrow: "Posibilidades",
+    title: "Qué puedes hacer con láser.",
+    description: "Desde una pieza única hasta una serie para tu negocio, adaptamos el proceso al objetivo de cada proyecto.",
+    items: [
+      { title: "Letreros y señalética", description: "Señales, placas y nombres con medidas y diseño personalizados.", example: "Letrero de acceso o placa informativa", category: "Espacios" },
+      { title: "Llaveros personalizados", description: "Piezas compactas para regalos, eventos o identidad corporativa.", example: "Serie de llaveros con nombre o marca", category: "Regalos" },
+      { title: "Grabado de logos", description: "Aplicación de identidad visual sobre superficies compatibles.", example: "Logo grabado en una placa de madera", category: "Marcas" },
+      { title: "Packaging y etiquetas", description: "Detalles para presentación, identificación y empaque de productos.", example: "Etiqueta decorativa para una colección", category: "Packaging" },
+      { title: "Decoración y regalos", description: "Objetos con nombres, fechas, mensajes o formas especiales.", example: "Adorno personalizado para una celebración", category: "Personalización" },
+      { title: "Piezas para emprendimientos", description: "Componentes repetibles para productos, exhibición o armado.", example: "Piezas cortadas para una serie pequeña", category: "Producción" },
+    ] satisfies UseCase[],
+  },
+  materials: {
+    eyebrow: "Materiales",
+    title: "Opciones compatibles y sujetas a evaluación.",
+    description: "El resultado depende tanto del material como de su composición, formato y espesor.",
+    items: [
+      { name: "Madera terciada", recommendedUse: "Letreros, decoración, cajas y piezas para armado.", advantages: ["Apariencia natural", "Admite corte y grabado"], note: "El espesor y el adhesivo de las capas deben evaluarse." },
+      { name: "MDF", recommendedUse: "Prototipos, señalética interior y formas decorativas.", advantages: ["Superficie uniforme", "Buena definición de corte"], note: "Requiere validar espesor y terminación esperada." },
+      { name: "Acrílico", recommendedUse: "Letreros, exhibidores, placas y piezas visuales.", advantages: ["Terminación definida", "Disponible en distintas apariencias"], note: "Se evalúa el tipo específico de acrílico antes de fabricar." },
+      { name: "Cartón o cartulina", recommendedUse: "Maquetas, plantillas, invitaciones y packaging liviano.", advantages: ["Ligero", "Adecuado para prototipos rápidos"], note: "La composición y el gramaje condicionan el resultado." },
+      { name: "Cuero sintético o similar", recommendedUse: "Etiquetas, accesorios y detalles personalizados.", advantages: ["Apariencia distintiva", "Útil para grabados decorativos"], note: "Siempre sujeto a evaluación de composición y prueba previa." },
+      { name: "Otros materiales", recommendedUse: "Propuestas especiales que requieran validar su comportamiento.", advantages: ["Amplía las posibilidades del proyecto", "Evaluación caso a caso"], note: "Requiere muestra, ficha técnica y prueba antes de confirmar." },
+    ] satisfies Material[],
+    note: "La compatibilidad final depende del espesor, composición del material y pruebas de corte o grabado.",
+  },
+  gallery: {
+    eyebrow: "Ejemplos simulados",
+    title: "Aplicaciones para inspirar tu proyecto.",
+    description: "Visualizaciones referenciales creadas con formas gráficas, sin fotografías ni imágenes externas.",
+    items: [
+      { name: "Letrero grabado", type: "Señalética", description: "Placa personalizada para identificar un espacio o negocio.", visual: "sign" },
+      { name: "Llavero personalizado", type: "Serie pequeña", description: "Formato compacto con nombre, frase o identidad de marca.", visual: "keyring" },
+      { name: "Logo en madera", type: "Grabado", description: "Aplicación de marca con una terminación de apariencia natural.", visual: "logo" },
+      { name: "Caja o packaging", type: "Corte y armado", description: "Piezas planas preparadas para ensamblar una presentación especial.", visual: "box" },
+      { name: "Etiqueta decorativa", type: "Personalización", description: "Detalle para productos, regalos o colecciones de temporada.", visual: "tag" },
+      { name: "Pieza para armado", type: "Corte", description: "Componente dimensionado para integrar un prototipo o producto.", visual: "assembly" },
+    ] satisfies LaserExample[],
+  },
+  files: {
+    eyebrow: "Preparación de archivos",
+    title: "Qué necesitamos para revisar tu trabajo.",
+    description: "No necesitas tener todo resuelto. Con estos antecedentes podemos evaluar mejor la idea y orientarte.",
+    items: [
+      { title: "Archivo vectorial ideal", description: "Envía SVG, AI, PDF o DXF con líneas claras para corte o grabado." },
+      { title: "Imagen de referencia", description: "Si no tienes un vector, comparte una imagen nítida para entender y evaluar la preparación necesaria." },
+      { title: "Medidas finales", description: "Indica ancho, alto y cualquier dimensión relevante en milímetros o centímetros." },
+      { title: "Cantidad de unidades", description: "Señala cuántas piezas iguales o variantes necesitas." },
+      { title: "Material y espesor", description: "Indica el material que prefieres y su espesor si ya lo conoces." },
+      { title: "Tipo de trabajo", description: "Aclara si necesitas corte, grabado o ambos procesos en la misma pieza." },
+    ] satisfies FileRequirement[],
+  },
+  pricing: {
+    eyebrow: "Referencias comerciales",
+    title: "Precios que se definen según cada proyecto.",
+    description: "Estas referencias explican qué factores consideramos; no corresponden a una tarifa cerrada.",
+    items: [
+      { title: "Llaveros personalizados", reference: "Precio según cantidad", detail: "Considera material, diseño, variantes y número de unidades." },
+      { title: "Letreros", reference: "Según tamaño y complejidad", detail: "El material, las dimensiones y la terminación definen el valor." },
+      { title: "Grabado de logos", reference: "Según área y material", detail: "Se revisan el tamaño del grabado, el archivo y la superficie." },
+      { title: "Cortes especiales", reference: "Según proceso", detail: "Se consideran el tiempo de máquina y la preparación requerida." },
+    ] satisfies ReferencePrice[],
+    note: "Los valores son referenciales. Cada trabajo se evalúa según material, espesor, tamaño, cantidad, tiempo de máquina y terminación.",
+  },
+  process: {
+    eyebrow: "Cotización",
+    title: "Cómo cotizar corte o grabado láser.",
+    description: "Cuanta más información recibamos, más precisa será la evaluación inicial.",
+    steps: [
+      { title: "Envía tu idea, imagen o archivo", description: "Comparte el material disponible y cuéntanos qué quieres lograr." },
+      { title: "Indica medidas, material y cantidad", description: "Incluye dimensiones finales y número de unidades." },
+      { title: "Revisamos factibilidad y preparación", description: "Validamos el archivo, el material y las pruebas necesarias." },
+      { title: "Enviamos valor y plazo estimado", description: "Recibes una propuesta acorde al alcance revisado." },
+    ],
+  },
+  faq: {
+    eyebrow: "Preguntas frecuentes",
+    title: "Respuestas antes de comenzar.",
+    items: [
+      { question: "¿Qué diferencia hay entre corte y grabado?", answer: "El corte atraviesa el material para obtener una forma. El grabado marca la superficie para crear textos, logos o detalles sin separar la pieza." },
+      { question: "¿Qué archivos sirven para cortar?", answer: "Lo ideal es un archivo vectorial SVG, AI, PDF o DXF, con líneas limpias y medidas definidas." },
+      { question: "¿Puedo enviar solo una imagen?", answer: "Sí. Podemos revisar una imagen de referencia y confirmar si necesita preparación o vectorización antes de fabricar." },
+      { question: "¿Qué materiales se pueden cortar?", answer: "Trabajamos con materiales compatibles como madera terciada, MDF, ciertos acrílicos, cartón y otros evaluables. Siempre confirmamos composición y espesor antes de producir." },
+      { question: "¿El precio depende del tamaño?", answer: "Sí. También influyen el material, espesor, cantidad, complejidad del archivo, tiempo de máquina y terminación." },
+      { question: "¿Puedo pedir varias unidades iguales?", answer: "Sí. Indica la cantidad al cotizar para evaluar la distribución, el tiempo de producción y el valor correspondiente." },
+    ] satisfies Faq[],
+  },
+  finalCta: {
+    eyebrow: "Tu proyecto puede comenzar aquí",
+    title: "Cuéntanos qué quieres cortar o grabar.",
+    description: "Envía tu idea, medidas y material de preferencia. Revisaremos la factibilidad y responderemos con un valor y plazo estimados.",
+    primaryAction: { label: "Cotizar trabajo láser", href: "mailto:contacto@d3dchile.cl?subject=Cotización%20de%20trabajo%20láser" },
+    secondaryAction: { label: "Volver al inicio", href: "/" },
+  },
+};

@@ -29,3 +29,15 @@ export type Faq = {
   question: string;
   answer: string;
 };
+
+export type FileRequirement = {
+  title: string;
+  description: string;
+};
+
+export type LaserExample = {
+  name: string;
+  type: string;
+  description: string;
+  visual: "sign" | "keyring" | "logo" | "box" | "tag" | "assembly";
+};

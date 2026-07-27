@@ -36,7 +36,7 @@ export const homeContent = {
           "Creamos señalética, decoración, regalos, packaging y productos corporativos con cortes y grabados definidos.",
         examples: "Madera, acrílico y materiales compatibles",
         actionLabel: "Cotizar trabajo láser",
-        href: "#cotizar",
+        href: "/laser",
         accent: "violet" as const,
       },
     ],
