@@ -5,6 +5,7 @@ export const mainNavigation: NavigationItem[] = [
   { label: "Impresión 3D", href: "/impresion-3d" },
   { label: "Corte y grabado láser", href: "/laser" },
   { label: "Catálogo", href: "/catalogo" },
+  { label: "Lanzamientos", href: "/lanzamientos" },
   { label: "Ofertas", href: "/ofertas", featured: true },
   { label: "Cotizar", href: "/cotizar" },
   { label: "Contacto", href: "/contacto" },
