@@ -7,7 +7,7 @@ export const mainNavigation: NavigationItem[] = [
   { label: "Catálogo", href: "/catalogo" },
   { label: "Ofertas", href: "/ofertas", featured: true },
   { label: "Cotizar", href: "/cotizar" },
-  { label: "Contacto", href: "/#contacto" },
+  { label: "Contacto", href: "/contacto" },
 ];
 
 export const footerNavigation = mainNavigation.filter(
