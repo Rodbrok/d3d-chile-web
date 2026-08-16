@@ -16,13 +16,13 @@ export function OfferCard({ offer, index }: { offer: Offer; index: number }) {
 
   return (
     <article className="group flex min-h-full flex-col overflow-hidden rounded-3xl border border-slate-800 bg-slate-900/70 transition-transform hover:-translate-y-1 hover:border-cyan-300/30">
-      <div className={`relative h-48 overflow-hidden border-b border-slate-800 bg-gradient-to-br ${accent}`} aria-hidden="true">
-        <div className="hero-grid absolute inset-0 opacity-25" />
-        <div className={`absolute top-1/2 left-1/2 h-24 w-36 -translate-x-1/2 -translate-y-1/2 border border-cyan-200/60 bg-slate-950/70 shadow-[0_0_40px_rgba(34,211,238,0.12)] ${visual.outer}`}>
+      <div className={`relative h-48 overflow-hidden border-b border-slate-800 bg-gradient-to-br ${accent}`}>
+        <div className="hero-grid absolute inset-0 opacity-25" aria-hidden="true" />
+        <div className={`absolute top-1/2 left-1/2 h-24 w-36 -translate-x-1/2 -translate-y-1/2 border border-cyan-200/60 bg-slate-950/70 shadow-[0_0_40px_rgba(34,211,238,0.12)] ${visual.outer}`} aria-hidden="true">
           <div className={`absolute inset-6 border border-violet-300/60 bg-violet-300/10 ${visual.inner}`} />
         </div>
         <span className="absolute top-4 left-4 rounded-full border border-slate-700 bg-slate-950/80 px-3 py-1.5 text-[0.65rem] font-bold tracking-wider text-slate-200 uppercase">{offer.service}</span>
-        <span className="absolute right-4 bottom-4 text-xs font-bold text-cyan-200/80">{String(index + 1).padStart(2, "0")}</span>
+        <span className="absolute right-4 bottom-4 text-xs font-bold text-cyan-200/80" aria-hidden="true">{String(index + 1).padStart(2, "0")}</span>
       </div>
       <div className="flex flex-1 flex-col p-6">
         <p className="text-xs font-bold tracking-[0.14em] text-rose-300 uppercase">{offer.benefit}</p>
