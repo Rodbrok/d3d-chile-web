@@ -13,4 +13,4 @@ export const mainNavigation: NavigationItem[] = [
 
 export const footerNavigation = mainNavigation.filter(
   ({ label }) => !["Inicio", "Ofertas"].includes(label),
-);
+).concat({ label: "Galería", href: "/galeria" });
