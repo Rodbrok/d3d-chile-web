@@ -17,6 +17,7 @@ export const metadata: Metadata = {
 
 export default function FrequentlyAskedQuestionsPage() {
   const content = faqContent;
+  const categoryCountLabel = `${content.categories.length} ${content.categories.length === 1 ? "categoría" : "categorías"}`;
 
   return (
     <PublicLayout>
@@ -38,7 +39,7 @@ export default function FrequentlyAskedQuestionsPage() {
               <span className="absolute top-[3.1rem] left-1/2 -translate-x-1/2 text-6xl font-light text-cyan-200">?</span>
               <div className="absolute right-10 bottom-16 left-10 space-y-4"><div className="h-2 rounded-full bg-slate-700" /><div className="h-2 w-4/5 rounded-full bg-slate-800" /><div className="h-2 w-2/3 rounded-full bg-gradient-to-r from-cyan-400/70 to-violet-400/70" /></div>
             </div>
-            <span className="absolute top-1 right-2 rounded-full border border-slate-700 bg-slate-900 px-4 py-2 text-xs text-slate-300">7 categorías</span>
+            <span className="absolute top-1 right-2 rounded-full border border-slate-700 bg-slate-900 px-4 py-2 text-xs text-slate-300">{categoryCountLabel}</span>
             <span className="absolute bottom-2 left-0 rounded-full border border-slate-700 bg-slate-900 px-4 py-2 text-xs text-slate-300">Respuestas directas</span>
           </div>
         </Container>
