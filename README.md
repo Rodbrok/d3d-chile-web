@@ -80,6 +80,8 @@ El catálogo, la galería, las ofertas y los lanzamientos contienen referencias 
 
 La planificación funcional se encuentra en [docs/plan-proyecto.md](docs/plan-proyecto.md) y las normas de colaboración en [docs/reglas-desarrollo.md](docs/reglas-desarrollo.md).
 
+La planificación técnica de la futura integración con Supabase y el panel administrador está en [docs/plan-admin-supabase.md](docs/plan-admin-supabase.md). Esta etapa es exclusivamente documental.
+
 ## Seguridad
 
 - No subir claves, tokens, contraseñas, credenciales ni secretos al repositorio.
