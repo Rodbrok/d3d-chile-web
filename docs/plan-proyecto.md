@@ -57,6 +57,8 @@ Estas secciones pertenecen a una fase posterior. No se implementarán hasta defi
 - **Cotizaciones:** revisar solicitudes, estados y antecedentes enviados por clientes.
 - **Configuración del sitio:** mantener datos de contacto, textos globales y parámetros operativos.
 
+El alcance técnico preliminar, la migración desde `src/data`, los permisos y las fases de la futura integración se detallan en [plan-admin-supabase.md](plan-admin-supabase.md), sin implementar Supabase ni el panel en esta etapa.
+
 ## Fases futuras
 
 ### Fase 1: Fundaciones y contenido
