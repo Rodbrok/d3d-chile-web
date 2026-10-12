@@ -40,13 +40,13 @@ export default function LaserPage() {
               {content.hero.trustMessages.map((message) => <li key={message} className="flex items-center gap-2"><span className="size-1.5 rounded-full bg-violet-300" aria-hidden="true" />{message}</li>)}
             </ul>
           </div>
-          <div className="relative mx-auto aspect-square w-full max-w-md" aria-hidden="true">
-            <div className="absolute inset-5 -rotate-3 rounded-[3rem] border border-violet-300/20 bg-gradient-to-br from-violet-400/15 via-slate-950 to-cyan-400/10 shadow-[0_0_80px_rgba(167,139,250,0.12)]" />
+          <div className="relative mx-auto aspect-square w-full max-w-md">
+            <div className="absolute inset-5 -rotate-3 rounded-[3rem] border border-violet-300/20 bg-gradient-to-br from-violet-400/15 via-slate-950 to-cyan-400/10 shadow-[0_0_80px_rgba(167,139,250,0.12)]" aria-hidden="true" />
             <div className="absolute inset-16 rounded-[2.5rem] border border-slate-700 bg-slate-950/85">
-              <div className="absolute top-9 left-1/2 h-32 w-px -translate-x-1/2 bg-gradient-to-b from-violet-300 via-cyan-200 to-transparent shadow-[0_0_18px_rgba(167,139,250,0.9)]" />
-              <div className="absolute top-[10.25rem] left-1/2 h-28 w-40 -translate-x-1/2 rounded-lg border border-cyan-200/60 bg-cyan-300/5" />
-              <div className="absolute top-[12rem] left-1/2 size-16 -translate-x-1/2 rotate-45 rounded-xl border border-violet-300/60" />
-              <div className="absolute right-8 bottom-8 left-8 h-px bg-gradient-to-r from-transparent via-violet-300 to-transparent" />
+              <div className="absolute top-9 left-1/2 h-32 w-px -translate-x-1/2 bg-gradient-to-b from-violet-300 via-cyan-200 to-transparent shadow-[0_0_18px_rgba(167,139,250,0.9)]" aria-hidden="true" />
+              <div className="absolute top-[10.25rem] left-1/2 h-28 w-40 -translate-x-1/2 rounded-lg border border-cyan-200/60 bg-cyan-300/5" aria-hidden="true" />
+              <div className="absolute top-[12rem] left-1/2 size-16 -translate-x-1/2 rotate-45 rounded-xl border border-violet-300/60" aria-hidden="true" />
+              <div className="absolute right-8 bottom-8 left-8 h-px bg-gradient-to-r from-transparent via-violet-300 to-transparent" aria-hidden="true" />
             </div>
             <span className="absolute top-4 right-5 rounded-full border border-slate-700 bg-slate-900 px-4 py-2 text-xs text-slate-300">Corte definido</span>
             <span className="absolute bottom-7 left-0 rounded-full border border-slate-700 bg-slate-900 px-4 py-2 text-xs text-slate-300">Detalle personalizado</span>

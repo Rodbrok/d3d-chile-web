@@ -33,10 +33,10 @@ export default function GalleryPage() {
             <div className="mt-9 flex flex-col gap-3 sm:flex-row"><Button href={content.hero.primaryAction.href}>{content.hero.primaryAction.label}</Button><Button href={content.hero.secondaryAction.href} variant="secondary">{content.hero.secondaryAction.label}</Button></div>
             <ul className="mt-12 flex flex-wrap gap-x-8 gap-y-3 text-sm text-slate-400">{content.hero.trustMessages.map((message) => <li key={message} className="flex items-center gap-2"><span className="size-1.5 rounded-full bg-cyan-300" aria-hidden="true" />{message}</li>)}</ul>
           </div>
-          <div className="relative mx-auto h-[27rem] w-full max-w-lg" aria-hidden="true">
-            <div className="absolute inset-6 rotate-3 rounded-[2.75rem] border border-violet-300/20 bg-gradient-to-br from-cyan-400/15 via-slate-950 to-violet-500/20 shadow-[0_0_90px_rgba(34,211,238,0.1)]" />
-            <div className="absolute top-2 left-7 h-48 w-48 -rotate-6 rounded-3xl border border-cyan-300/40 bg-slate-950/80"><div className="absolute inset-10 rotate-45 rounded-2xl border border-violet-300/50 bg-violet-300/10" /></div>
-            <div className="absolute right-4 bottom-5 h-48 w-56 rotate-3 rounded-3xl border border-rose-300/30 bg-slate-950/90"><div className="absolute top-10 left-1/2 h-24 w-28 -translate-x-1/2 rounded-t-full border border-cyan-300/50" /><div className="absolute right-8 bottom-7 left-8 h-px bg-gradient-to-r from-cyan-300 via-violet-300 to-rose-300" /></div>
+          <div className="relative mx-auto h-[27rem] w-full max-w-lg">
+            <div className="absolute inset-6 rotate-3 rounded-[2.75rem] border border-violet-300/20 bg-gradient-to-br from-cyan-400/15 via-slate-950 to-violet-500/20 shadow-[0_0_90px_rgba(34,211,238,0.1)]" aria-hidden="true" />
+            <div className="absolute top-2 left-7 h-48 w-48 -rotate-6 rounded-3xl border border-cyan-300/40 bg-slate-950/80"><div className="absolute inset-10 rotate-45 rounded-2xl border border-violet-300/50 bg-violet-300/10" aria-hidden="true" /></div>
+            <div className="absolute right-4 bottom-5 h-48 w-56 rotate-3 rounded-3xl border border-rose-300/30 bg-slate-950/90"><div className="absolute top-10 left-1/2 h-24 w-28 -translate-x-1/2 rounded-t-full border border-cyan-300/50" aria-hidden="true" /><div className="absolute right-8 bottom-7 left-8 h-px bg-gradient-to-r from-cyan-300 via-violet-300 to-rose-300" aria-hidden="true" /></div>
             <div className="absolute top-40 right-16 rounded-2xl border border-slate-700 bg-slate-900/95 px-5 py-4 shadow-2xl"><p className="text-[0.65rem] font-bold tracking-wider text-slate-500 uppercase">Colección visual</p><p className="mt-1 font-mono text-sm text-cyan-200">09 referencias</p></div>
           </div>
         </Container>

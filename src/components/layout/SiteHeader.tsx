@@ -41,13 +41,10 @@ export function SiteHeader() {
         <nav className="hidden items-center gap-5 xl:flex" aria-label="Navegación principal">
           <NavigationLinks />
         </nav>
-        <div className="hidden lg:block xl:hidden">
-          <Button href="/cotizar">Cotizar proyecto</Button>
-        </div>
         <div className="hidden xl:block">
           <Button href="/cotizar">Cotizar proyecto</Button>
         </div>
-        <details className="group relative lg:hidden">
+        <details className="group relative xl:hidden">
           <summary className="flex size-11 cursor-pointer list-none items-center justify-center rounded-xl border border-slate-700 text-slate-50 [&::-webkit-details-marker]:hidden">
             <span className="sr-only">Abrir menú</span>
             <span className="flex w-5 flex-col gap-1.5" aria-hidden="true">
@@ -56,7 +53,7 @@ export function SiteHeader() {
               <span className="h-0.5 w-full bg-current" />
             </span>
           </summary>
-          <nav className="absolute top-14 right-0 w-72 rounded-2xl border border-slate-700 bg-slate-950 p-5 shadow-2xl" aria-label="Navegación móvil">
+          <nav className="absolute top-14 right-0 w-72 max-w-[calc(100vw-3rem)] rounded-2xl border border-slate-700 bg-slate-950 p-5 shadow-2xl" aria-label="Navegación móvil">
             <NavigationLinks mobile />
             <Button href="/cotizar" className="mt-5 w-full">Cotizar proyecto</Button>
           </nav>

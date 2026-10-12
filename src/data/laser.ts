@@ -5,7 +5,7 @@ export const laserContent = {
     eyebrow: "Corte y grabado láser",
     title: "Corte preciso y grabado personalizado para dar forma a tu idea.",
     subtitle: "Creamos piezas, letreros, productos y detalles para marcas, regalos y emprendimientos, con cada proyecto evaluado según su material y terminación.",
-    primaryAction: { label: "Cotizar trabajo láser", href: "mailto:contacto@d3dchile.cl?subject=Cotización%20de%20trabajo%20láser" },
+    primaryAction: { label: "Cotizar trabajo láser", href: "/cotizar" },
     secondaryAction: { label: "Ver ejemplos", href: "#ejemplos" },
     trustMessages: ["Cortes precisos", "Grabados personalizados", "Productos para marcas y regalos"],
   },
@@ -101,7 +101,7 @@ export const laserContent = {
     eyebrow: "Tu proyecto puede comenzar aquí",
     title: "Cuéntanos qué quieres cortar o grabar.",
     description: "Envía tu idea, medidas y material de preferencia. Revisaremos la factibilidad y responderemos con un valor y plazo estimados.",
-    primaryAction: { label: "Cotizar trabajo láser", href: "mailto:contacto@d3dchile.cl?subject=Cotización%20de%20trabajo%20láser" },
+    primaryAction: { label: "Cotizar trabajo láser", href: "/cotizar" },
     secondaryAction: { label: "Volver al inicio", href: "/" },
   },
 };

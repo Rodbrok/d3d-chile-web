@@ -1,7 +1,7 @@
 import type { NavigationItem } from "@/types/site";
 
 export const mainNavigation: NavigationItem[] = [
-  { label: "Inicio", href: "/#inicio" },
+  { label: "Inicio", href: "/" },
   { label: "Impresión 3D", href: "/impresion-3d" },
   { label: "Corte y grabado láser", href: "/laser" },
   { label: "Catálogo", href: "/catalogo" },
@@ -12,7 +12,7 @@ export const mainNavigation: NavigationItem[] = [
 ];
 
 export const footerNavigation = mainNavigation.filter(
-  ({ label }) => !["Inicio", "Ofertas"].includes(label),
+  ({ label }) => label !== "Inicio",
 ).concat(
   { label: "Galería", href: "/galeria" },
   { label: "Preguntas frecuentes", href: "/preguntas-frecuentes" },

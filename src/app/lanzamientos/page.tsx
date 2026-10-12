@@ -32,16 +32,16 @@ export default function LaunchesPage() {
             <div className="mt-9 flex flex-col gap-3 sm:flex-row"><Button href={content.hero.primaryAction.href}>{content.hero.primaryAction.label}</Button><Button href={content.hero.secondaryAction.href} variant="secondary">{content.hero.secondaryAction.label}</Button></div>
             <ul className="mt-12 flex flex-wrap gap-x-8 gap-y-3 text-sm text-slate-400">{content.hero.trustMessages.map((message) => <li key={message} className="flex items-center gap-2"><span className="size-1.5 rounded-full bg-cyan-300" aria-hidden="true" />{message}</li>)}</ul>
           </div>
-          <div className="relative mx-auto h-[25rem] w-full max-w-md" aria-hidden="true">
-            <div className="absolute inset-x-8 top-3 bottom-10 rotate-3 rounded-[2.75rem] border border-violet-300/20 bg-gradient-to-br from-cyan-400/15 via-slate-950 to-violet-500/20 shadow-[0_0_90px_rgba(34,211,238,0.1)]" />
+          <div className="relative mx-auto h-[25rem] w-full max-w-md">
+            <div className="absolute inset-x-8 top-3 bottom-10 rotate-3 rounded-[2.75rem] border border-violet-300/20 bg-gradient-to-br from-cyan-400/15 via-slate-950 to-violet-500/20 shadow-[0_0_90px_rgba(34,211,238,0.1)]" aria-hidden="true" />
             <div className="absolute top-16 right-12 left-4 h-52 -rotate-3 rounded-[2rem] border border-slate-700 bg-slate-950/90">
-              <div className="absolute top-10 left-10 size-20 rotate-45 rounded-2xl border border-cyan-300/50 bg-cyan-300/5" />
-              <div className="absolute top-9 right-9 h-24 w-16 rounded-t-full border border-violet-300/50 bg-violet-300/5" />
-              <div className="absolute right-10 bottom-7 left-10 h-px bg-gradient-to-r from-cyan-300 via-violet-300 to-rose-300" />
+              <div className="absolute top-10 left-10 size-20 rotate-45 rounded-2xl border border-cyan-300/50 bg-cyan-300/5" aria-hidden="true" />
+              <div className="absolute top-9 right-9 h-24 w-16 rounded-t-full border border-violet-300/50 bg-violet-300/5" aria-hidden="true" />
+              <div className="absolute right-10 bottom-7 left-10 h-px bg-gradient-to-r from-cyan-300 via-violet-300 to-rose-300" aria-hidden="true" />
             </div>
             <div className="absolute right-0 bottom-4 w-52 rounded-2xl border border-slate-700 bg-slate-900/95 p-4 shadow-2xl">
               <div className="flex items-center justify-between text-[0.65rem] font-bold tracking-wider text-slate-400 uppercase"><span>Estado</span><span className="text-cyan-300">En desarrollo</span></div>
-              <div className="mt-3 h-1.5 overflow-hidden rounded-full bg-slate-800"><div className="h-full w-2/3 rounded-full bg-gradient-to-r from-cyan-300 to-violet-400" /></div>
+              <div className="mt-3 h-1.5 overflow-hidden rounded-full bg-slate-800"><div className="h-full w-2/3 rounded-full bg-gradient-to-r from-cyan-300 to-violet-400" aria-hidden="true" /></div>
             </div>
             <span className="absolute top-3 right-2 rounded-full border border-slate-700 bg-slate-900 px-4 py-2 text-xs text-slate-300">Colección 01</span>
           </div>

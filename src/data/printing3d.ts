@@ -1,6 +1,6 @@
 import type { Faq, GalleryWork, Material, ReferencePrice, UseCase } from "@/types/services";
 
-const quoteHref = "mailto:contacto@d3dchile.cl?subject=Cotización%20de%20impresión%203D";
+const quoteHref = "/cotizar";
 
 export const printing3dContent = {
   hero: {

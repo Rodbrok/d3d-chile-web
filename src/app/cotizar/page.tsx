@@ -34,12 +34,12 @@ export default function QuotePage() {
             <div className="mt-9 flex flex-col gap-3 sm:flex-row"><Button href={content.hero.primaryAction.href}>{content.hero.primaryAction.label}</Button><Button href={content.hero.secondaryAction.href} variant="secondary">{content.hero.secondaryAction.label}</Button></div>
             <ul className="mt-12 flex flex-wrap gap-x-8 gap-y-3 text-sm text-slate-400">{content.hero.trustMessages.map((message) => <li key={message} className="flex items-center gap-2"><span className="size-1.5 rounded-full bg-cyan-300" aria-hidden="true" />{message}</li>)}</ul>
           </div>
-          <div className="relative mx-auto aspect-square w-full max-w-md" aria-hidden="true">
-            <div className="absolute inset-4 rotate-6 rounded-[3rem] border border-cyan-300/20 bg-gradient-to-br from-cyan-400/10 via-slate-950 to-violet-500/20 shadow-[0_0_80px_rgba(34,211,238,0.1)]" />
+          <div className="relative mx-auto aspect-square w-full max-w-md">
+            <div className="absolute inset-4 rotate-6 rounded-[3rem] border border-cyan-300/20 bg-gradient-to-br from-cyan-400/10 via-slate-950 to-violet-500/20 shadow-[0_0_80px_rgba(34,211,238,0.1)]" aria-hidden="true" />
             <div className="absolute inset-16 -rotate-3 rounded-[2.5rem] border border-slate-700 bg-slate-950/90 p-8">
-              <div className="h-3 w-1/2 rounded-full bg-cyan-300/50" /><div className="mt-7 h-2 w-full rounded-full bg-slate-700" /><div className="mt-4 h-2 w-4/5 rounded-full bg-slate-700" />
-              <div className="mt-9 grid grid-cols-2 gap-4"><div className="h-16 rounded-xl border border-violet-400/40 bg-violet-400/5" /><div className="h-16 rounded-xl border border-cyan-400/40 bg-cyan-400/5" /></div>
-              <div className="mt-6 h-10 rounded-full bg-gradient-to-r from-cyan-400/70 to-violet-500/70" />
+              <div className="h-3 w-1/2 rounded-full bg-cyan-300/50" aria-hidden="true" /><div className="mt-7 h-2 w-full rounded-full bg-slate-700" aria-hidden="true" /><div className="mt-4 h-2 w-4/5 rounded-full bg-slate-700" aria-hidden="true" />
+              <div className="mt-9 grid grid-cols-2 gap-4"><div className="h-16 rounded-xl border border-violet-400/40 bg-violet-400/5" aria-hidden="true" /><div className="h-16 rounded-xl border border-cyan-400/40 bg-cyan-400/5" aria-hidden="true" /></div>
+              <div className="mt-6 h-10 rounded-full bg-gradient-to-r from-cyan-400/70 to-violet-500/70" aria-hidden="true" />
             </div>
             <span className="absolute top-4 right-0 rounded-full border border-slate-700 bg-slate-900 px-4 py-2 text-xs text-slate-300">Solicitud guiada</span>
             <span className="absolute bottom-8 left-0 rounded-full border border-slate-700 bg-slate-900 px-4 py-2 text-xs text-slate-300">Evaluación personalizada</span>

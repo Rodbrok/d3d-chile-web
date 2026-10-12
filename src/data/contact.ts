@@ -55,7 +55,7 @@ export const contactContent = {
       },
       {
         title: "Ofertas",
-        description: "Consulta las promociones vigentes y sus condiciones antes de escribirnos.",
+        description: "Consulta las promociones referenciales y sus condiciones antes de escribirnos.",
         action: { label: "Revisar ofertas", href: "/ofertas" },
       },
     ] satisfies ContactChannel[],
