@@ -32,13 +32,13 @@ export default function Home() {
               ))}
             </ul>
           </div>
-          <div className="relative mx-auto hidden aspect-square w-full max-w-md lg:block" aria-hidden="true">
-            <div className="absolute inset-8 rotate-6 rounded-[3rem] border border-cyan-300/20 bg-gradient-to-br from-cyan-300/10 via-slate-900 to-violet-500/20 shadow-[0_0_80px_rgba(34,211,238,0.08)]" />
+          <div className="relative mx-auto hidden aspect-square w-full max-w-md lg:block">
+            <div className="absolute inset-8 rotate-6 rounded-[3rem] border border-cyan-300/20 bg-gradient-to-br from-cyan-300/10 via-slate-900 to-violet-500/20 shadow-[0_0_80px_rgba(34,211,238,0.08)]" aria-hidden="true" />
             <div className="absolute inset-20 grid place-items-center rounded-[2.5rem] border border-slate-700 bg-slate-950/80">
               <div className="relative size-44 rotate-[-6deg]">
-                <div className="absolute inset-x-7 top-3 h-20 skew-y-[-25deg] border border-cyan-300/60 bg-cyan-300/10" />
-                <div className="absolute right-1 bottom-5 left-14 h-24 skew-y-[25deg] border border-violet-400/60 bg-violet-500/10" />
-                <div className="absolute bottom-5 left-1 h-24 w-14 skew-y-[-25deg] border border-rose-300/50 bg-rose-400/10" />
+                <div className="absolute inset-x-7 top-3 h-20 skew-y-[-25deg] border border-cyan-300/60 bg-cyan-300/10" aria-hidden="true" />
+                <div className="absolute right-1 bottom-5 left-14 h-24 skew-y-[25deg] border border-violet-400/60 bg-violet-500/10" aria-hidden="true" />
+                <div className="absolute bottom-5 left-1 h-24 w-14 skew-y-[-25deg] border border-rose-300/50 bg-rose-400/10" aria-hidden="true" />
               </div>
             </div>
             <span className="absolute top-2 right-10 rounded-full border border-slate-700 bg-slate-900 px-4 py-2 text-xs text-slate-300">Diseño</span>

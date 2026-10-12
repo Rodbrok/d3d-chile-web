@@ -25,7 +25,7 @@ export const homeContent = {
         description:
           "Fabricamos prototipos, repuestos, figuras, piezas funcionales y objetos personalizados en distintas escalas.",
         examples: "Prototipos, piezas únicas y series pequeñas",
-        actionLabel: "Cotizar impresión 3D",
+        actionLabel: "Conocer impresión 3D",
         href: "/impresion-3d",
         accent: "cyan" as const,
       },
@@ -35,7 +35,7 @@ export const homeContent = {
         description:
           "Creamos señalética, decoración, regalos, packaging y productos corporativos con cortes y grabados definidos.",
         examples: "Madera, acrílico y materiales compatibles",
-        actionLabel: "Cotizar trabajo láser",
+        actionLabel: "Conocer corte y grabado láser",
         href: "/laser",
         accent: "violet" as const,
       },

@@ -33,13 +33,13 @@ export default function OffersPage() {
             <div className="mt-9 flex flex-col gap-3 sm:flex-row"><Button href={content.hero.primaryAction.href}>{content.hero.primaryAction.label}</Button><Button href={content.hero.secondaryAction.href} variant="secondary">{content.hero.secondaryAction.label}</Button></div>
             <ul className="mt-12 flex flex-wrap gap-x-8 gap-y-3 text-sm text-slate-400">{content.hero.trustMessages.map((message) => <li key={message} className="flex items-center gap-2"><span className="size-1.5 rounded-full bg-rose-300" aria-hidden="true" />{message}</li>)}</ul>
           </div>
-          <div className="relative mx-auto aspect-square w-full max-w-md" aria-hidden="true">
-            <div className="absolute inset-3 -rotate-3 rounded-[3rem] border border-rose-300/20 bg-gradient-to-br from-rose-400/15 via-slate-950 to-cyan-400/15 shadow-[0_0_80px_rgba(251,113,133,0.12)]" />
+          <div className="relative mx-auto aspect-square w-full max-w-md">
+            <div className="absolute inset-3 -rotate-3 rounded-[3rem] border border-rose-300/20 bg-gradient-to-br from-rose-400/15 via-slate-950 to-cyan-400/15 shadow-[0_0_80px_rgba(251,113,133,0.12)]" aria-hidden="true" />
             <div className="absolute inset-14 rotate-3 rounded-[2.5rem] border border-slate-700 bg-slate-950/90">
-              <div className="absolute top-10 left-10 size-24 rounded-full border border-cyan-300/60 bg-cyan-300/5" />
-              <div className="absolute top-20 right-9 h-28 w-24 rotate-12 rounded-xl border border-violet-300/60 bg-violet-300/5" />
-              <div className="absolute right-12 bottom-10 left-12 h-14 rounded-lg border border-rose-300/50" />
-              <div className="absolute inset-x-8 top-1/2 h-px bg-gradient-to-r from-transparent via-rose-300 to-transparent" />
+              <div className="absolute top-10 left-10 size-24 rounded-full border border-cyan-300/60 bg-cyan-300/5" aria-hidden="true" />
+              <div className="absolute top-20 right-9 h-28 w-24 rotate-12 rounded-xl border border-violet-300/60 bg-violet-300/5" aria-hidden="true" />
+              <div className="absolute right-12 bottom-10 left-12 h-14 rounded-lg border border-rose-300/50" aria-hidden="true" />
+              <div className="absolute inset-x-8 top-1/2 h-px bg-gradient-to-r from-transparent via-rose-300 to-transparent" aria-hidden="true" />
             </div>
             <span className="absolute top-3 right-4 rounded-full border border-slate-700 bg-slate-900 px-4 py-2 text-xs text-slate-300">Propuestas editables</span>
             <span className="absolute bottom-6 left-0 rounded-full border border-slate-700 bg-slate-900 px-4 py-2 text-xs text-slate-300">Sin compra en línea</span>

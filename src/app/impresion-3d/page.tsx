@@ -39,11 +39,11 @@ export default function Printing3dPage() {
               {content.hero.trustMessages.map((message) => <li key={message} className="flex items-center gap-2"><span className="size-1.5 rounded-full bg-cyan-300" aria-hidden="true" />{message}</li>)}
             </ul>
           </div>
-          <div className="relative mx-auto aspect-square w-full max-w-md" aria-hidden="true">
-            <div className="absolute inset-4 rotate-6 rounded-[3rem] border border-cyan-300/20 bg-gradient-to-br from-cyan-300/10 via-slate-950 to-violet-500/20 shadow-[0_0_80px_rgba(34,211,238,0.1)]" />
+          <div className="relative mx-auto aspect-square w-full max-w-md">
+            <div className="absolute inset-4 rotate-6 rounded-[3rem] border border-cyan-300/20 bg-gradient-to-br from-cyan-300/10 via-slate-950 to-violet-500/20 shadow-[0_0_80px_rgba(34,211,238,0.1)]" aria-hidden="true" />
             <div className="absolute inset-16 rounded-[2.5rem] border border-slate-700 bg-slate-950/80">
-              {[0, 1, 2, 3, 4].map((layer) => <div key={layer} className="absolute right-12 left-12 h-16 -skew-y-6 rounded-xl border border-cyan-300/50 bg-cyan-300/5" style={{ bottom: `${3.5 + layer * 2.2}rem` }} />)}
-              <div className="absolute top-12 left-1/2 h-24 w-28 -translate-x-1/2 rounded-t-full border border-violet-300/50 bg-violet-400/10" />
+              {[0, 1, 2, 3, 4].map((layer) => <div key={layer} className="absolute right-12 left-12 h-16 -skew-y-6 rounded-xl border border-cyan-300/50 bg-cyan-300/5" style={{ bottom: `${3.5 + layer * 2.2}rem` }} aria-hidden="true" />)}
+              <div className="absolute top-12 left-1/2 h-24 w-28 -translate-x-1/2 rounded-t-full border border-violet-300/50 bg-violet-400/10" aria-hidden="true" />
             </div>
             <span className="absolute top-2 right-8 rounded-full border border-slate-700 bg-slate-900 px-4 py-2 text-xs text-slate-300">Capa por capa</span>
             <span className="absolute bottom-7 left-0 rounded-full border border-slate-700 bg-slate-900 px-4 py-2 text-xs text-slate-300">Hecho a medida</span>

@@ -1,6 +1,6 @@
 # D3D Chile
 
-Sitio web comercial de D3D Chile para presentar servicios de impresión 3D, corte y grabado láser, exhibir el catálogo y facilitar solicitudes de cotización y contacto.
+Vitrina pública inicial de D3D Chile para presentar servicios de impresión 3D, corte y grabado láser, exhibir referencias comerciales y orientar cotizaciones y consultas.
 
 ## Stack
 
@@ -72,7 +72,11 @@ Las carpetas vacías incluyen un archivo `.gitkeep` temporal para conservar la e
 
 El proyecto cuenta con una identidad visual inicial, layout público, navegación responsive y componentes reutilizables. La portada incluye presentación comercial, servicios, trabajos destacados simulados, proceso de atención, beneficios y llamados a cotizar. Las rutas `/impresion-3d` y `/laser` presentan aplicaciones, materiales, ejemplos simulados, referencias comerciales, proceso y preguntas frecuentes de cada servicio. La ruta `/catalogo` reúne categorías y productos simulados con valores referenciales. La ruta `/galeria` presenta una vitrina de proyectos simulados mediante visuales CSS, categorías informativas y llamados a cotizar. La ruta `/lanzamientos` presenta próximos diseños, categorías, estados de avance y condiciones comerciales referenciales. La ruta `/ofertas` presenta promociones mock, condiciones y llamados a solicitar una cotización, sin compra en línea. La ruta `/cotizar` orienta al cliente, detalla los antecedentes necesarios e incluye una vista previa no funcional del futuro formulario. La ruta `/contacto` centraliza los canales de atención, información útil y una vista no funcional del futuro formulario de contacto. La ruta `/preguntas-frecuentes` reúne respuestas referenciales por categoría sobre servicios, archivos, materiales, coordinación y alcance actual del sitio. Los textos de marca, contacto, navegación y contenido de las páginas se administran desde `src/data`, mientras que las piezas de interfaz se organizan en `src/components`.
 
-En esta etapa no hay base de datos, autenticación, panel de administración, comercio electrónico, pagos ni integración con Supabase. Los formularios visibles son únicamente vistas informativas y el contacto se realiza mediante correo.
+Rutas públicas existentes: `/`, `/impresion-3d`, `/laser`, `/catalogo`, `/ofertas`, `/lanzamientos`, `/galeria`, `/cotizar`, `/contacto` y `/preguntas-frecuentes`.
+
+En esta etapa no hay base de datos, autenticación, panel administrador, ecommerce, carrito, pagos ni Supabase. Tampoco hay API routes, server actions ni backend real. Los formularios visibles son informativos: sus campos están deshabilitados y no envían ni guardan datos. Los enlaces de correo abren el cliente de correo del visitante; no envían información desde el sitio.
+
+El catálogo, la galería, las ofertas y los lanzamientos contienen referencias simuladas. Valores, disponibilidad, materiales y plazos están sujetos a evaluación y cotización. No se garantiza stock permanente ni se informa una dirección física o teléfono confirmado. El contenido editable permanece en `src/data`.
 
 La planificación funcional se encuentra en [docs/plan-proyecto.md](docs/plan-proyecto.md) y las normas de colaboración en [docs/reglas-desarrollo.md](docs/reglas-desarrollo.md).
 

@@ -32,12 +32,12 @@ export default function FrequentlyAskedQuestionsPage() {
             <div className="mt-9 flex flex-col gap-3 sm:flex-row"><Button href={content.hero.primaryAction.href}>{content.hero.primaryAction.label}</Button><Button href={content.hero.secondaryAction.href} variant="secondary">{content.hero.secondaryAction.label}</Button></div>
             <ul className="mt-12 flex flex-wrap gap-x-8 gap-y-3 text-sm text-slate-400">{content.hero.trustMessages.map((message) => <li key={message} className="flex items-center gap-2"><span className="size-1.5 rounded-full bg-cyan-300" aria-hidden="true" />{message}</li>)}</ul>
           </div>
-          <div className="relative mx-auto h-[390px] w-full max-w-md" aria-hidden="true">
-            <div className="absolute inset-4 rotate-3 rounded-[3rem] border border-violet-300/20 bg-gradient-to-br from-violet-400/15 via-slate-950 to-cyan-400/10 shadow-[0_0_80px_rgba(34,211,238,0.1)]" />
+          <div className="relative mx-auto h-[390px] w-full max-w-md">
+            <div className="absolute inset-4 rotate-3 rounded-[3rem] border border-violet-300/20 bg-gradient-to-br from-violet-400/15 via-slate-950 to-cyan-400/10 shadow-[0_0_80px_rgba(34,211,238,0.1)]" aria-hidden="true" />
             <div className="absolute inset-12 rounded-[2.5rem] border border-slate-700 bg-slate-950/90">
-              <div className="absolute top-12 left-1/2 size-24 -translate-x-1/2 rounded-full border border-cyan-300/50 bg-cyan-300/5" />
-              <span className="absolute top-[3.1rem] left-1/2 -translate-x-1/2 text-6xl font-light text-cyan-200">?</span>
-              <div className="absolute right-10 bottom-16 left-10 space-y-4"><div className="h-2 rounded-full bg-slate-700" /><div className="h-2 w-4/5 rounded-full bg-slate-800" /><div className="h-2 w-2/3 rounded-full bg-gradient-to-r from-cyan-400/70 to-violet-400/70" /></div>
+              <div className="absolute top-12 left-1/2 size-24 -translate-x-1/2 rounded-full border border-cyan-300/50 bg-cyan-300/5" aria-hidden="true" />
+              <span className="absolute top-[3.1rem] left-1/2 -translate-x-1/2 text-6xl font-light text-cyan-200" aria-hidden="true">?</span>
+              <div className="absolute right-10 bottom-16 left-10 space-y-4"><div className="h-2 rounded-full bg-slate-700" aria-hidden="true" /><div className="h-2 w-4/5 rounded-full bg-slate-800" aria-hidden="true" /><div className="h-2 w-2/3 rounded-full bg-gradient-to-r from-cyan-400/70 to-violet-400/70" aria-hidden="true" /></div>
             </div>
             <span className="absolute top-1 right-2 rounded-full border border-slate-700 bg-slate-900 px-4 py-2 text-xs text-slate-300">{categoryCountLabel}</span>
             <span className="absolute bottom-2 left-0 rounded-full border border-slate-700 bg-slate-900 px-4 py-2 text-xs text-slate-300">Respuestas directas</span>

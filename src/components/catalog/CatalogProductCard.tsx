@@ -20,13 +20,13 @@ export function CatalogProductCard({ product, index }: { product: CatalogProduct
 
   return (
     <article className="group flex min-h-full flex-col overflow-hidden rounded-3xl border border-slate-800 bg-slate-900/70 transition-transform hover:-translate-y-1 hover:border-slate-700">
-      <div className={`relative h-52 overflow-hidden border-b border-slate-800 bg-gradient-to-br ${accent}`} aria-hidden="true">
-        <div className="hero-grid absolute inset-0 opacity-30" />
-        <div className={`absolute top-1/2 left-1/2 h-28 w-36 -translate-x-1/2 -translate-y-1/2 border border-cyan-200/60 bg-slate-950/60 shadow-[0_0_35px_rgba(34,211,238,0.14)] ${visual.shape}`}>
+      <div className={`relative h-52 overflow-hidden border-b border-slate-800 bg-gradient-to-br ${accent}`}>
+        <div className="hero-grid absolute inset-0 opacity-30" aria-hidden="true" />
+        <div className={`absolute top-1/2 left-1/2 h-28 w-36 -translate-x-1/2 -translate-y-1/2 border border-cyan-200/60 bg-slate-950/60 shadow-[0_0_35px_rgba(34,211,238,0.14)] ${visual.shape}`} aria-hidden="true">
           <div className={`absolute inset-7 border border-violet-300/70 bg-violet-300/10 ${visual.detail}`} />
         </div>
         <span className="absolute top-4 left-4 rounded-full border border-slate-700 bg-slate-950/80 px-3 py-1.5 text-[0.65rem] font-bold tracking-wider text-slate-300 uppercase">{product.service}</span>
-        <span className="absolute right-4 bottom-4 text-xs font-bold text-cyan-200/80">{String(index + 1).padStart(2, "0")}</span>
+        <span className="absolute right-4 bottom-4 text-xs font-bold text-cyan-200/80" aria-hidden="true">{String(index + 1).padStart(2, "0")}</span>
       </div>
       <div className="flex flex-1 flex-col p-6">
         <div className="flex items-start justify-between gap-4">
